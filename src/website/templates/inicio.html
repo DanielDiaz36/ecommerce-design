@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ LANGUAGE_CODE }}">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{#	<meta name="author" content="SemiColonWeb" />#}
+
+    {% include 'style.html' %}
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Inicio</title>
+</head>
+
+<body class="stretched">
+
+	<div id="wrapper" class="clearfix">
+
+		{% include 'header.html' %}
+
+		{% include 'slider.html' %}
+
+		{% include 'content.html' %}
+
+		{% include 'footer.html' %}
+
+	</div>
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	{% include 'scripts.html' %}
+</body>
+</html>
