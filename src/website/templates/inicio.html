@@ -1,33 +1,39 @@
+{% load i18n %}
+
 <!DOCTYPE html>
-<html dir="ltr" lang="{{ LANGUAGE_CODE }}">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-{#	<meta name="author" content="SemiColonWeb" />#}
+    <html dir="ltr" lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{#    	<meta name="author" content="SemiColonWeb" />#}
+     
+        {% include 'style.html' %}
 
-    {% include 'style.html' %}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Inicio</title>
-</head>
+        {% include 'style2.html' %}
 
-<body class="stretched">
+        <title>{% trans 'Inicio' %}</title>
 
-	<div id="wrapper" class="clearfix">
+    </head>
 
-		{% include 'header.html' %}
+    <body class="stretched">
 
-		{% include 'slider.html' %}
+        <div id="wrapper" class="clearfix">
 
-		{% include 'content.html' %}
+            {% include 'top_bar.html' %}
 
-		{% include 'footer.html' %}
+            {% include 'header.html' %}
 
-	</div>
+            {% include 'slider.html' %}
 
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+            {% include 'content.html' %}
 
-	{% include 'scripts.html' %}
-</body>
+            {% include 'footer.html' %}
+
+        </div>
+
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+        {% include 'scripts.html' %}
+    </body>
 </html>

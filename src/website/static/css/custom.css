@@ -1,0 +1,47 @@
+/*#fondo {*/
+	/*background-image: url(https://empresiona.com/wp-content/uploads/2019/02/guillermo-sanchez-529739-unsplash-2.jpg);*/
+	/*padding: 400px 100px;*/
+	/*text-align: center;*/
+	/*background-position: center center;*/
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
+	/*position: relative;*/
+/*}*/
+
+/*#fondo:before {*/
+	/*content:'';*/
+	/*position: absolute;*/
+        /*top: 0;*/
+	/*bottom: 0;*/
+	/*left: 0;*/
+	/*right: 0;*/
+	/*background-color: rgba(0,0,0,0.6);*/
+/*}*/
+
+/*#fondo h1 {*/
+	/*font-size: 60px;*/
+	/*color: #fff;*/
+	/*position: relative*/
+/*}*/
+
+
+/*  Top bar*/
+#info_top_bar__phone,
+#info_top_bar__email {
+    color: #666;
+}
+
+#info_top_bar__phone:hover,
+#info_top_bar__email:hover {
+    color: #1ABC9C;
+    transition: all 200ms ease-out 0s;
+}
+
+/*  Header */
+#top-search form input {
+    font-size: 100% !important;
+}
+
+#search-main::placeholder {
+    text-transform: none;
+}
