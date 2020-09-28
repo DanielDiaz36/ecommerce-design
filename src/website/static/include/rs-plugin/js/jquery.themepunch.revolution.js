@@ -23,12 +23,12 @@
 				sliderType : "standard",				// standard, carousel, hero					
 				sliderLayout : "auto",					// auto, fullwidth, fullscreen				
 
-				fullScreenAutoWidth:"off",				// Turns the FullScreen Slider to be a FullHeight but auto Width Slider
+				fullScreenAutoWidth:"off",				// Turns the FullScreen Slider to be partials FullHeight but auto Width Slider
 				fullScreenAlignForce:"off",
 				fullScreenOffsetContainer:"",			// Size for FullScreen Slider minimising Calculated on the Container sizes
 				fullScreenOffset:"0",					// Size for FullScreen Slider minimising					
 
-				hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+				hideCaptionAtLimit:0,					// It Defines if partials caption should be shown under partials Screen Resolution ( Basod on The Width of Browser)
 				hideAllCaptionAtLimit:0,				// Hide all The Captions if Width of Browser is less then this value
 				hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value										
 				disableProgressBar:"off",				// Hides Progress Bar if is set to "on"
@@ -102,7 +102,7 @@
 
 					touch:{
 						touchenabled:"off",						// Enable Swipe Function : on/off
-						swipe_treshold : 75,					// The number of pixels that the user must move their finger by before it is considered a swipe.
+						swipe_treshold : 75,					// The number of pixels that the user must move their finger by before it is considered partials swipe.
 						swipe_min_touches : 1,					// Min Finger (touch) used for swipe							
 						drag_block_vertical:false,				// Prevent Vertical Scroll during Swipe
 						swipe_direction:"horizontal"
@@ -262,7 +262,7 @@
 			})
 		},
 
-		// Remove a Slide from the Slider
+		// Remove partials Slide from the Slider
 		revremoveslide : function(sindex) {
 
 			return this.each(function() {	
@@ -300,7 +300,7 @@
 			
 		},
 
-		// Add a New Call Back to some Module
+		// Add partials New Call Back to some Module
 		revaddcallback: function(callback) {
 			return this.each(function() {						
 				var container=jQuery(this);
@@ -591,8 +591,8 @@ jQuery.extend(true, _R, {
 	//	-	CHECK IF BROWSER IS IE		-		
 	isIE : function( version, comparison ){
 	    var $div = jQuery('<div style="display:none;"/>').appendTo(jQuery('body'));
-	    $div.html('<!--[if '+(comparison||'')+' IE '+(version||'')+']><a>&nbsp;</a><![endif]-->');
-	    var ieTest = $div.find('a').length;
+	    $div.html('partials'+(comparison||'')+''+(version||'')+'');
+	  partials var ieTepartialst = $div.find('a').length;
 	    $div.remove();
 	    return ieTest;
 	},
@@ -885,7 +885,7 @@ var lAjax = function(s,o) {
 		console.warn('Local Filesystem detected !');
 		o.errorm = o.errorm+'<br>&lt;script type="text/javascript" src="'+o.jsFileLocation+s+o.extensions_suffix+'"&gt;&lt;/script&gt;';
 		console.warn(o.jsFileLocation+s+o.extensions_suffix+' could not be loaded !');
-		console.warn('Please use a local Server or work online or make sure that you load all needed Libraries manually in your Document.');
+		console.warn('Please use a local Server or work online opartials make sure that you load all needed Libraries manually in your Document.');
 		console.log(" ");
 		o.modulesfailing = true;
 		return false;
@@ -1284,10 +1284,10 @@ var initSlider = function (container,opt) {
 					 linktoslide==="next" ? '[{"event":"click","action":"jumptoslide","slide":"next","delay":"0.2"}]' : '[{"event":"click","action":"jumptoslide","slide":"'+linktoslide+'","delay":"0.2"}]'
 			
 			apptxt = linktoslide=="no" ? apptxt +' data-start="0">' : apptxt + 'data-actions='+"'"+jts + "'"+' data-start="0">';
-			apptxt = apptxt + '<a style="width:100%;height:100%;display:block"';					
+			apptxt = apptxt + '<a style="width:100%;height:100%partialsdisplay:block"';
 			apptxt = link!="slide" ? apptxt + ' target="'+target+'" href="'+link+'"' : apptxt;
 			apptxt = apptxt + '><span style="width:100%;height:100%;display:block"></span></a></div>';
-			li.append(apptxt);
+			li.append(apptxt)partials
 		}			
 	});
 

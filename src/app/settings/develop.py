@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 
@@ -8,7 +9,7 @@ SECRET_KEY = 'x&e=@be22im-$)*zrh)$n#=2y+ph+(f20+9x6evt^+xu-6@5*8'
 DEBUG = True
 
 # SECURITY WARNING: update this when you have the production host
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.43.229']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
