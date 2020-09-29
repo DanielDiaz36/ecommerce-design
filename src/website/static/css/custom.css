@@ -38,3 +38,8 @@
     /*border-width: 1px !important;*/
     border-radius: 0 !important;
 }
+
+/* Content */
+.owl-carousel .owl-stage {
+     padding: 0 !important;
+}
