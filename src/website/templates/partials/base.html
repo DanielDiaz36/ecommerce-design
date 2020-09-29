@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html dir="ltr" lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{#    	<meta name="author" content="SemiColonWeb" />#}
+
+        {% include 'partials/style.html' %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% include 'partials/style2.html' %}
+
+        {% block title %}{% endblock %}
+
+    </head>
+
+    <body class="stretched">
+
+        <div id="wrapper" class="clearfix">
+
+            {% include 'partials/top_bar.html' %}
+
+            {% include 'partials/header.html' %}
+
+            {% block content %}{% endblock %}
+
+            {% include 'partials/footer.html' %}
+
+        </div>
+
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+        {% include 'partials/scripts.html' %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'partials/base.html' %}
+{% load i18n %}
+
+{% block title %}<title>{% trans 'Inicio' %}</title>{% endblock %}
+
+{% block content %}
+
+    {% include 'partials/slider.html' %}
+
+    {% include 'partials/content.html' %}
+
+{% endblock %}

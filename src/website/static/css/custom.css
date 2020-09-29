@@ -1,0 +1,45 @@
+/*  Top bar*/
+#info_top_bar__phone,
+#info_top_bar__email {
+    color: #666;
+}
+
+#info_top_bar__phone:hover,
+#info_top_bar__email:hover {
+    color: #1ABC9C;
+    transition: all 200ms ease-out 0s;
+}
+
+.top-links ul li .login {
+    text-transform: none;
+}
+
+/*  Header */
+#top-search form input {
+    font-size: 100% !important;
+}
+
+#search-main::placeholder {
+    text-transform: none;
+}
+
+#primary-menu ul li a div {
+    text-transform: none;
+}
+
+/* Slider */
+.revo-slider-caps-text,
+.revo-slider-emphasis-text,
+.revo-slider-desc-text {
+    /*color: #ffffff !important;*/
+}
+
+.revo-slider-btn {
+    /*border-width: 1px !important;*/
+    border-radius: 0 !important;
+}
+
+/* Content */
+.owl-carousel .owl-stage {
+     padding: 0 !important;
+}
