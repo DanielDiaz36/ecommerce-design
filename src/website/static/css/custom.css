@@ -43,3 +43,12 @@
 .owl-carousel .owl-stage {
      padding: 0 !important;
 }
+
+/* Footer */
+.footer-link-inicio {
+    color: rgba(255,255,255,0.25) !important;
+}
+
+.footer-link-inicio:hover {
+    color: #7e8585 !important;
+}
