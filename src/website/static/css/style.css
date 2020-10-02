@@ -371,6 +371,8 @@ span.middot {
 
 .col-padding { padding: 60px; }
 
+/*.toppadding  { padding: 10px; }*/
+
 .nopadding { padding: 0 !important; }
 
 .noleftpadding { padding-left: 0 !important; }
