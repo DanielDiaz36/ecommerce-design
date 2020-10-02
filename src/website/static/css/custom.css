@@ -48,6 +48,18 @@
     padding: 35px !important;
 }
 
+.acctitle {
+    font-size: 125% !important;
+}
+
+.acc_content {
+    font-size: 110% !important;
+}
+
+/*.q-open {*/
+    /*color: #1ABC9C !important;*/
+/*}*/
+
 /* Footer */
 .footer-link-inicio {
     color: rgba(255,255,255,0.25) !important;
