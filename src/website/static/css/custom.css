@@ -56,6 +56,14 @@
     font-size: 110% !important;
 }
 
+#processTabs ul li a {
+    background-color: #1ABC9C;
+}
+
+#processTabs ul li h4 {
+    padding-top: 15px;
+}
+
 /*.q-open {*/
     /*color: #1ABC9C !important;*/
 /*}*/
