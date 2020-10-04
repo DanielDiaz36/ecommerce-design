@@ -31,5 +31,17 @@
         <div id="gotoTop" class="icon-angle-up"></div>
 
         {% include 'partials/scripts.html' %}
+    <script>
+	jQuery(document).ready( function($){
+		$( "#tabs" ).tabs({
+			collapsible: true,
+			event: 'mouseover',
+			show: {
+				effect: "fade",
+				duration: 400
+			}
+		});
+	});
+</script>
     </body>
 </html>
