@@ -18,7 +18,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'testingmylandingpage_ecommerce',
         'USER': 'testingmylandingpage_admin',
-        'PASSWORD': os.environ.get('PASSWORD_DATABASE'),  # 'Lenin36ddd'
+        'PASSWORD': os.environ.get('PASSWORD_DATABASE'),
         'HOST': 'postgresql-testingmylandingpage.alwaysdata.net',
         'PORT': '5432',
     }

@@ -1,15 +1,17 @@
+{% load i18n %}
+
 <ul>
-    <li class="current"><a href="{% url 'inicio' %}"><div>Inicio</div></a></li>
-    <li><a href="#"><div>Diseños</div></a></li>
-    <li><a href="#"><div>Servicios</div></a></li>
-    <li><a href="#"><div>Precios</div></a></li>
-    <li><a href="#"><div>Blog</div></a></li>
-    <li><a href="#"><div>Podcast</div></a></li>
+    <li {% if inicio_active == True %} class="current" {% endif %}><a href="{% url 'home' %}"><div>Inicio</div></a></li>
+    <li {% if designs_active == True %} class="current" {% endif %}><a href="{% url 'designs' %}"><div>Diseños</div></a></li>
+    <li {% if services_active == True %} class="current" {% endif %}><a href="{% url 'services' %}"><div>Servicios</div></a></li>
+    <li {% if pricing_active == True %} class="current" {% endif %}><a href="{% url 'pricing' %}"><div>Precios</div></a></li>
+    <li {% if blog_active == True %} class="current" {% endif %}><a href="{% url 'blog' %}"><div>Blog</div></a></li>
+    <li {% if podcast_active == True %} class="current" {% endif %}><a href="{% url 'podcast' %}"><div>Podcast</div></a></li>
     <li><a href="#"><div>Síguenos</div></a>
         <ul>
             <li><a href="#"><div>Facebook</div></a>
             <li><a href="#"><div>Twitter</div></a>
-            <li><a href="#"><div>Linkedin</div></a>
+{#            <li><a href="#"><div>Linkedin</div></a>#}
             <li><a href="#"><div>Instagram</div></a>
             <li><a href="#"><div>Pinterest</div></a>
             <li><a href="#"><div>Telegram</div></a>
@@ -21,6 +23,6 @@
 {#            <li><a href="#"><div>Inglés</div></a>#}
 {#        </ul>#}
 {#    </li>#}
-    <li><a href="#"><div>Contacto</div></a></li>
-    <li><a href="#"><div>Sobre nosotros</div></a></li>
+    <li {% if contact_active == True %} class="current" {% endif %}><a href="{% url 'contact' %}"><div>Contacto</div></a></li>
+    <li {% if about_active == True %} class="current" {% endif %}><a href="{% url 'about' %}"><div>Sobre nosotros</div></a></li>
 </ul>
