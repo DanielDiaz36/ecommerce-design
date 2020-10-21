@@ -24,7 +24,7 @@
 }
 
 #primary-menu ul li a div {
-    text-transform: none;
+    text-transform: none !important;
 }
 
 /* Slider */
@@ -70,9 +70,20 @@
 
 /* Footer */
 .footer-link-inicio {
-    color: rgba(255,255,255,0.25) !important;
+    color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .footer-link-inicio:hover {
-    color: #7e8585 !important;
+    color: #666d6d !important;
+}
+.footer-title {
+    text-transform: none !important;
+}
+
+.footer-contact {
+    margin-top: 10px;
+}
+
+.footer-contact span {
+    color: rgba(255, 255, 255, 0.87) !important;
 }
