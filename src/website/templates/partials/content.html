@@ -29,7 +29,8 @@
         {#  Fin: BIENVENIDA   #}
 
         {#  Inicio: BENEFICIOS DE UNA TIENDA ONLINE   #}
-        <div class="container clearfix toppadding-res">
+        <div class="section topmargin-lg">
+            <div class="container clearfix toppadding-res">
 
                 <div class="heading-block topmargin-lg center">
                     <h2>¿Qué beneficios obtengo con una tienda online?</h2>
@@ -66,8 +67,8 @@
 
                     </div>
 
-                    <div class="col-lg-4 d-md-none d-lg-block bottommargin center">
-                        <img src="{% static 'img/tienda-en-linea5.jpg' %}" alt="iphone tienda online">
+                    <div class="col-lg-4 d-md-none d-lg-block center">
+                        <img src="{% static 'img/tienda-en-linea5.png' %}" alt="iphone tienda online">
                     </div>
 
                     <div class="col-lg-4 col-md-6 bottommargin">
@@ -101,9 +102,12 @@
                 </div>
 
             </div>
+        </div>
 
-        <div class="section topmargin-lg">
-            <div class="container clearfix">
+        {#  Fin: BENEFICIOS DE UNA TIENDA ONLINE   #}
+
+        {#  Inicio: SU TIENDA ONLINE INCLUIRA   #}
+        <div class="container clearfix">
 
                 <div class="heading-block center">
                     <h2>Su tienda online incluirá</h2>
@@ -209,11 +213,11 @@
                 <div class="clear"></div>
 
             </div>
-        </div>
-        {#  Fin: BENEFICIOS DE UNA TIENDA ONLINE   #}
+        {#  Fin: SU TIENDA ONLINE INCLUIRA   #}
 
         {#  Inicio: PASOS PARA SOLICITAR EL SERVICIO   #}
-        <div class="container clearfix">
+        <div class="section topmargin-lg">
+            <div class="container clearfix">
 
             <div class="heading-block center">
                 <h3>¿Qué pasos debo seguir para poner en marcha mi tienda online?</h3>
@@ -245,6 +249,7 @@
                 </ul>
             </div>
 
+        </div>
         </div>
         {#  Fin: PASOS PARA SOLICITAR EL SERVICIO   #}
 
@@ -374,7 +379,7 @@
         {#  Fin: TRABAJOS ANTERIORES   #}
 
         {#  Inicio: MAS DE 50 DISEÑOS   #}
-        <a href="javascript:;" class="button button-full button-dark center tright bottommargin-lg" style="margin-top: 10px !important;">
+        <a href="{% url 'designs' %}" class="button button-full button-dark center tright bottommargin-lg" style="margin-top: 10px !important;">
             <div class="container clearfix">
                 Más de 50+ diseños para tiendas online. <strong>Ver diseños</strong> <i class="icon-caret-right" style="top:4px;"></i>
             </div>
@@ -398,7 +403,7 @@
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
 
-                <a href="#" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Ver diseños<i class="icon-angle-right"></i></a>
+                <a href="{% url 'designs' %}" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Ver diseños<i class="icon-angle-right"></i></a>
 
             </div>
 
@@ -459,7 +464,7 @@
         {# Inicio: QUE DICEN NUESTROS CLIENTES #}
 
         {#  Inicio: PREGUNTAS FRECUENTES   #}
-        <div class="section nobottommargin" style="padding-bottom: 40px !important;">
+        <div class="section nobottommargin notopmargin" style="padding-bottom: 40px !important;">
             <div class="container clearfix">
 
                 <div class="heading-block center">

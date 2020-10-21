@@ -1,22 +1,110 @@
-<footer id="footer" class="dark">
+{% load static i18n %}
+
+<footer id="footer" class="dark" style="background: url({% static 'img/footer-bg.jpg' %}) repeat; background-size: cover;">
+
 
     <div class="container">
 
         <!-- Footer Widgets
         ============================================= -->
-        <div class="footer-widgets-wrap clearfix">
+        <div class="footer-widgets-wrap clearfix" style="padding-top: 70px !important; padding-bottom: 30px !important;">
 
-            <div class="col_two_third">
+            <div class="row clearfix">
 
+                <div class="col-lg-5" style="padding-bottom: 50px;">
 
+                    {# Inicio: MENU  #}
+                    <div class="widget clearfix">
+                        <h4>Menú</h4>
+                        <div class="row">
 
+                            <div class="col-4 widget_links">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Inicio</a></li>
+                                    <li><a href="{% url 'pricing' %}">Precios</a></li>
+                                    <li><a href="{% url 'about' %}">Sobre nosotros</a></li>
+                                </ul>
+                            </div>
 
-                <div class="col_one_third">
+                            <div class="col-4 widget_links">
+                                <ul>
+                                    <li><a href="{% url 'designs' %}">Diseños</a></li>
+                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-4 widget_links">
+                                <ul>
+                                    <li><a href="{% url 'services' %}">Servicios</a></li>
+                                    <li><a href="{% url 'contact' %}">Contacto</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    {# Fin: MENU  #}
+
+                    {# Inicio: SIGUENOS  #}
+                    <div style="padding-top: 50px">
+                        <h4 style="text-transform: uppercase; letter-spacing: 2px; font-size: 15px; font-weight: 600;">Síguenos</h4>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-facebook" title="Facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-twitter" title="Twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-linkedin" title="Linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-instagram" title="Instagram">
+                            <i class="icon-instagram"></i>
+                            <i class="icon-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-pinterest" title="Pinterest">
+                            <i class="icon-pinterest"></i>
+                            <i class="icon-pinterest"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-rounded si-small si-colored si-telegram" title="Telegram">
+                            <i class="icon-telegram-plane"></i>
+                            <i class="icon-telegram-plane"></i>
+                        </a>
+
+{#                        <a href="mailto:contact@ecommercedesign.com" class="social-icon si-rounded si-small si-colored si-email3" title="Correo">#}
+{#                            <i class="icon-line-mail"></i>#}
+{#                            <i class="icon-line-mail"></i>#}
+{#                        </a>#}
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="footer-contact">
+                        <span style="letter-spacing: 1px"><i class="icon-line-mail"></i> Contáctanos: </span>
+                        <a href="mailto:contact@ecommercedesign.com" title="Contáctenos" style="letter-spacing: 1px">
+                            contact@ecommercedesign.com
+                        </a>
+                    </div>
+                    {# Fin: SIGUENOS  #}
+
+                </div>
+
+                <div class="col-lg-3">
+                    {# Inicio: PUBLICACIONES RECIENTES  #}
                     <div class="widget clearfix">
                         <h4>Publicaciones recientes</h4>
 
                         <div id="post-list-footer">
                             <div class="spost clearfix">
+                                <div class="entry-image d-md-none d-lg-block">
+                                    <a href="javascript:;"><img class="rounded-circle" src="{% static 'img/publicaciones-recientes/footer/3.jpg' %}" alt=""></a>
+                                </div>
                                 <div class="entry-c">
                                     <div class="entry-title">
                                         <h4><a href="javascript:;">Incrementa tus ventas con estos 40 consejos</a></h4>
@@ -26,158 +114,72 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="javascript:;">Cómo Incrementar Las Ventas: 7 Estrategias Que Funcionan</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="#">50 acciones para aumentar las ventas de tu Tienda Online</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col_one_third">
-                    <div class="widget clearfix">
-                        <h4>Publicaciones recientes</h4>
 
-                        <div id="post-list-footer">
                             <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="javascript:;">Incrementa tus ventas con estos 40 consejos</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
+                                <div class="entry-image d-md-none d-lg-block">
+                                    <a href="javascript:;"><img class="rounded-circle" src="{% static 'img/publicaciones-recientes/footer/6.jpg' %}" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="spost clearfix">
                                 <div class="entry-c">
                                     <div class="entry-title">
                                         <h4><a href="javascript:;">Cómo Incrementar Las Ventas: 7 Estrategias Que Funcionan</a></h4>
                                     </div>
                                     <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
+                                        <li>30 de septiembre del 2020</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="#">50 acciones para aumentar las ventas de tu Tienda Online</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {# Inicio: PUBLICACIONES RECIENTES #}
-                <div class="col_one_third col_last">
-                    <div class="widget clearfix">
-                        <h4>Publicaciones recientes</h4>
 
-                        <div id="post-list-footer">
                             <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="javascript:;">Incrementa tus ventas con estos 40 consejos</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
+                                <div class="entry-image d-md-none d-lg-block">
+                                    <a href="javascript:;"><img class="rounded-circle" src="{% static 'img/publicaciones-recientes/footer/14.jpg' %}" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="spost clearfix">
                                 <div class="entry-c">
                                     <div class="entry-title">
-                                        <h4><a href="javascript:;">Cómo Incrementar Las Ventas: 7 Estrategias Que Funcionan</a></h4>
+                                        <h4><a href="javascript:;">Beneficios de las tiendas online y el comercio electrónico</a></h4>
                                     </div>
                                     <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="spost clearfix">
-                                <div class="entry-c">
-                                    <div class="entry-title">
-                                        <h4><a href="#">50 acciones para aumentar las ventas de tu Tienda Online</a></h4>
-                                    </div>
-                                    <ul class="entry-meta">
-                                        <li>29 de septiembre del 2020</li>
+                                        <li>30 de septiembre del 2020</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    {# Fin: PUBLICACIONES RECIENTES  #}
+
+                    <div class="d-none d-md-block d-lg-none bottommargin-sm"></div>
+
+                </div>
+
+                <div class="w-100 d-block d-md-block d-lg-none line"></div>
+
+                {# Inicio: NEWSLETTER  #}
+                <div class="col-lg-4">
+                    <div class="widget subscribe-widget clearfix">
+                        <h4>Suscríbete a nuestra newsletter</h4>
+                        <p>¿Le gustaría recibir actualizaciones de nuevos diseños, además de estrategias para aumentar las ventas de su negocio?
+                            <em>¡Nosotros nunca enviaremos spam!</em>
+                        </p>
+                    <div class="widget-subscribe-form-result"></div>
+                    <form id="widget-subscribe-form" action="" method="post" class="nobottommargin">
+                        <div style="margin-bottom: -10px;">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-bottom:10px;">
+                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control not-dark required email" placeholder="Escriba su correo...">
+                                </div>
+                                <div class="col-md-12" style="margin-bottom:10px;">
+                                    <button class="btn btn-block btn-success" type="submit">Subscribirme!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                     </div>
                 </div>
-                {# Fin: PUBLICACIONES RECIENTES #}
+                {# Fin: NEWSLETTER  #}
 
             </div>
 
-            {# Inicio: NEWSLETTER #}
-            <div class="col_one_third col_last">
-                <div class="widget clearfix">
-                    <h4>Suscríbete a nuestra newsletter</h4>
-
-                    <div class="widget subscribe-widget clearfix nomargin">
-                        <h5>¿Le gustaría recibir actualizaciones de nuevos diseños, además de estrategias para aumentar las ventas?:</h5>
-                        <div class="widget-subscribe-form-result"></div>
-                        <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="nobottommargin">
-                            <div class="input-group divcenter">
-{#                                <div class="input-group-prepend">#}
-{#                                    <div class="input-group-text"><i class="icon-email2"></i></div>#}
-{#                                </div>#}
-                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Escriba su email...">
-                                <div class="input-group-append">
-                                    <button class="btn btn-success" type="submit">Subscribirme!</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-{#                <div class="widget clearfix" style="margin-bottom: -20px;">#}
-{##}
-{#                    <div class="row">#}
-{##}
-{#                        <div class="col-lg-6 clearfix bottommargin-sm">#}
-{#                            <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">#}
-{#                                <i class="icon-facebook"></i>#}
-{#                                <i class="icon-facebook"></i>#}
-{#                            </a>#}
-{#                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>#}
-{#                        </div>#}
-{#                        <div class="col-lg-6 clearfix">#}
-{#                            <a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">#}
-{#                                <i class="icon-rss"></i>#}
-{#                                <i class="icon-rss"></i>#}
-{#                            </a>#}
-{#                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>#}
-{#                        </div>#}
-{##}
-{#                    </div>#}
-{##}
-{#                </div>#}
-
-            </div>
-            {# Inicio: NEWSLETTER #}
-
+{#            <div class="line"></div>#}
         </div>
 
     </div>
@@ -185,71 +187,11 @@
     <!-- Copyrights
     ============================================= -->
     <div id="copyrights">
-
         <div class="container clearfix">
-
-            <div class="col_half">
-                &copy; 2020 - <a href="{% url 'home' %}" class="footer-link-inicio">Ecommerce Design</a><br>
-                <div class="copyright-links"><a href="{% url 'terms' %}">Términos y condiciones</a> / <a href="{% url 'policy' %}">Política de privacidad</a></div>
+            <div class="col_full nobottommargin center">
+                &copy; <a href="{% url 'home' %}" class="footer-link-inicio">Ecommerce Design</a> 2019 - 2020 | Todos los derechos reservados. <a href="{% url 'policy' %}" class="footer-link-inicio" style="border-bottom: 1px dotted #444;">Política de privacidad</a> - <a href="{% url 'terms' %}" class="footer-link-inicio" style="border-bottom: 1px dotted #444;">Condiciones generales</a>
             </div>
-
-            <div class="col_half col_last tright">
-                <div class="fright clearfix">
-
-                    <a href="#" class="social-icon si-small si-borderless si-facebook" title="Facebook">
-                        <i class="icon-facebook"></i>
-                        <i class="icon-facebook"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-twitter" title="Twitter">
-                        <i class="icon-twitter"></i>
-                        <i class="icon-twitter"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-linkedin" title="Linkedin">
-                        <i class="icon-linkedin"></i>
-                        <i class="icon-linkedin"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-instagram" title="Instagram">
-                        <i class="icon-instagram"></i>
-                        <i class="icon-instagram"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-pinterest" title="Pinterest">
-                        <i class="icon-pinterest"></i>
-                        <i class="icon-pinterest"></i>
-                    </a>
-
-{#                    <a href="#" class="social-icon si-small si-borderless si-whatsapp" title="Whatsapp">#}
-{#                        <i class="icon-whatsapp"></i>#}
-{#                        <i class="icon-whatsapp"></i>#}
-{#                    </a>#}
-
-                    <a href="#" class="social-icon si-small si-borderless si-telegram" title="Telegram">
-                        <i class="icon-telegram-plane"></i>
-                        <i class="icon-telegram-plane"></i>
-                    </a>
-
-                    <a href="mailto:contact@ecommercedesign.com" class="social-icon si-small si-borderless si-email3" title="Correo">
-                        <i class="icon-line-mail"></i>
-                        <i class="icon-line-mail"></i>
-                    </a>
-
-                </div>
-
-                <div class="clear"></div>
-                <a href="mailto:contact@ecommercedesign.com" id="info_top_bar__email" title="Contáctenos">
-                    <i class="icon-line-mail"></i> contact@ecommercedesign.com
-                </a>
-                <span class="middot">&middot;</span>
-                <a href="tel:19000000000" id="info_top_bar__phone" title="Llámenos">
-                    <i class="icon-phone-volume"></i> (+1) 900-000-0000
-                </a>
-            </div>
-
         </div>
-
     </div>
 
 </footer>

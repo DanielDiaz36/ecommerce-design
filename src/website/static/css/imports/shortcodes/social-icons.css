@@ -278,8 +278,8 @@ body:not(.device-touch) .social-icon i {
 .si-colored.si-hackernews { background-color: #FF6600 !important; }
 .si-xing:hover,
 .si-colored.si-xing { background-color: #126567 !important; }
-.si-instagram:hover,
-.si-colored.si-instagram { background-color: #3F729B !important; }
+.si-telegram:hover,
+.si-colored.si-telegram { background-color: #3F729B !important; }
 .si-quora:hover,
 .si-colored.si-quora { background-color: #A82400 !important; }
 .si-openid:hover,
@@ -294,6 +294,8 @@ body:not(.device-touch) .social-icon i {
 .si-colored.si-plancast { background-color: #222 !important; }
 .si-appstore:hover,
 .si-colored.si-appstore { background-color: #000 !important; }
+.si-instagram:hover,
+.si-colored.si-instagram { background-color: #c8401d !important; }
 .si-pinterest:hover,
 .si-colored.si-pinterest { background-color: #C8232C !important; }
 .si-fivehundredpx:hover,
@@ -368,7 +370,7 @@ body:not(.device-touch) .social-icon i {
 .si-text-color.si-stackoverflow i { color: #EF8236; }
 .si-text-color.si-hackernews i { color: #FF6600; }
 .si-text-color.si-xing i { color: #126567; }
-.si-text-color.si-instagram i { color: #3F729B; }
+.si-text-color.si-telegram i { color: #3F729B; }
 .si-text-color.si-quora i { color: #A82400; }
 .si-text-color.si-openid i { color: #E16309; }
 .si-text-color.si-steam i { color: #111; }
@@ -376,6 +378,7 @@ body:not(.device-touch) .social-icon i {
 .si-text-color.si-disqus i { color: #E4E7EE; }
 .si-text-color.si-plancast i { color: #222; }
 .si-text-color.si-appstore i { color: #000; }
+.si-text-color.si-instagram i { color: #c8401d; }
 .si-text-color.si-pinterest i { color: #C8232C; }
 .si-text-color.si-fivehundredpx i { color: #111; }
 
