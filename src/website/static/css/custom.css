@@ -27,6 +27,29 @@
     text-transform: none !important;
 }
 
+@media (min-width: 993px) {
+    #li_siguenos,
+    #li_login {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    #li_login {
+        height: 83px;
+    }
+
+    #li_login a {
+        color: #ffffff !important;
+        width: 32%;
+        height: 45px;
+        text-align: center;
+        text-transform: none !important;
+        top: 20px;
+        float: right;
+    }
+}
+
 /* Slider */
 .revo-slider-caps-text,
 .revo-slider-emphasis-text,

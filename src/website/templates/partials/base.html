@@ -5,13 +5,16 @@
         <meta name = 'robots' content = 'noindex, nofollow'>
 {#    	<meta name="author" content="SemiColonWeb" />#}
 
+        <title>{% block title %}Bienvenido{% endblock %} | Ecommerce Design</title>
+
         {% include 'partials/style.html' %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {% block style %}{% endblock %}
+
         {% include 'partials/style2.html' %}
 
-        {% block title %}{% endblock %}
     </head>
 
     <body class="stretched">
@@ -31,17 +34,19 @@
         <div id="gotoTop" class="icon-angle-up"></div>
 
         {% include 'partials/scripts.html' %}
-    <script>
-	jQuery(document).ready( function($){
-		$( "#tabs" ).tabs({
-			collapsible: true,
-			event: 'mouseover',
-			show: {
-				effect: "fade",
-				duration: 400
-			}
-		});
-	});
-</script>
+        {% block js %}{% endblock %}
+
+        <script>
+            jQuery(document).ready( function($){
+                $( "#tabs" ).tabs({
+                    collapsible: true,
+                    event: 'mouseover',
+                    show: {
+                        effect: "fade",
+                        duration: 400
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

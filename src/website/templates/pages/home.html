@@ -1,12 +1,12 @@
 {% extends 'partials/base.html' %}
 {% load i18n %}
 
-{% block title %}<title>{% trans 'Inicio' %}</title>{% endblock %}
+{% block title %}{% trans 'Inicio' %}{% endblock %}
 
 {% block content %}
 
     {% include 'partials/slider.html' %}
 
-    {% include 'partials/content.html' %}
+    {% include 'partials/content_home.html' %}
 
 {% endblock %}

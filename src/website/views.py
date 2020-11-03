@@ -74,11 +74,27 @@ class AboutView(TemplateView):
         return ctx
 
 
+class FAQView(TemplateView):
+    template_name = 'pages/faq.html'
+
+    def get_context_data(self, **kwargs):
+        ctx = super(FAQView, self).get_context_data(**kwargs)
+        return ctx
+
+
 class PolicyView(TemplateView):
     template_name = 'pages/policy.html'
 
     def get_context_data(self, **kwargs):
         ctx = super(PolicyView, self).get_context_data(**kwargs)
+        return ctx
+
+
+class CancelPolicyView(TemplateView):
+    template_name = 'pages/cancel_policy.html'
+
+    def get_context_data(self, **kwargs):
+        ctx = super(CancelPolicyView, self).get_context_data(**kwargs)
         return ctx
 
 
