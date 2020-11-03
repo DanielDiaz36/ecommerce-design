@@ -11,7 +11,9 @@ from website.views import (
     PodcastView,
     ContactView,
     AboutView,
+    FAQView,
     PolicyView,
+    CancelPolicyView,
     TermsView
 )
 
@@ -24,6 +26,8 @@ urlpatterns = [
     path(_('contacto'), ContactView.as_view(), name='contact'),
     path(_('podcast'), PodcastView.as_view(), name='podcast'),
     path(_('sobre-nosotros'), AboutView.as_view(), name='about'),
+    path(_('preguntas-frecuentes'), FAQView.as_view(), name='faq'),
     path(_('politica-de-privacidad'), PolicyView.as_view(), name='policy'),
+    path(_('politica-de-cancelacion-y-devolucion'), CancelPolicyView.as_view(), name='cancel_policy'),
     path(_('terminos-y-condiciones'), TermsView.as_view(), name='terms'),
 ]

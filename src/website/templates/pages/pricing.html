@@ -1,10 +1,218 @@
 {% extends 'partials/base.html' %}
 {% load i18n %}
 
-{% block title %}<title>{% trans 'Precios' %}</title>{% endblock %}
+{% block style %}
+
+    <style>
+
+        .pricing-tenure-switcher { position: relative; }
+
+        .pricing-tenure-switcher .pts-left,
+        .pricing-tenure-switcher .pts-right,
+        .pricing-tenure-switcher .pts-switcher {
+            display: inline-block;
+            margin: 0 10px;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .pricing-tenure-switcher .pts-left,
+        .pricing-tenure-switcher .pts-right {
+            font-size: 16px;
+            font-weight: 600;
+            color: #AAA;
+            line-height: 30px;
+        }
+
+        .pricing-tenure-switcher .pts-switch-active { color: #333; }
+
+        .pricing-tenure-switcher .pts-switcher label { margin-bottom: 0; }
+
+    </style>
+
+{% endblock %}
+
+{% block title %}{% trans 'Precios' %}{% endblock %}
+
 
 {% block content %}
 
-    
+    <section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<div class="fancy-title title-dotted-border title-center">
+						<h3>Planes de pago</h3> <br>
+                        <span style="color: #ff4932">* Obtén 2 meses gratis con el pago anual</span>
+					</div>
+
+					<div id="section-pricing" class="page-section nopadding nomargin">
+
+						<div class="pricing-tenure-switcher center bottommargin-sm" data-container="#pricing-switch">
+							<span class="pts-left">Mensual</span>
+							<div class="pts-switcher">
+								<div class="switch">
+									<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
+									<label for="switch-toggle-pricing-tenure"></label>
+								</div>
+							</div>
+							<span class="pts-right">Anual</span>
+						</div>
+
+						<div id="pricing-switch" class="pricing row bottommargin-lg clearfix">
+
+							<div class="col-lg-4 col-md-6">
+
+								<div class="pricing-box">
+									<div class="pricing-title">
+										<h3>Básico</h3>
+									</div>
+									<div class="pricing-price">
+										<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>8</div>
+										<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>80</div>
+									</div>
+									<div class="pricing-features">
+										<ul style="padding-bottom: 106px; padding-top: 40px">
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Incluirá un total de 20 productos</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> 10 Secciones (Tienda, Carrito, Finalizar compra, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sitio web adaptado a todos los dispositivos móviles</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Pagos seguros (Paypal, Tarjeta de crédito, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sistema automático de copias de seguridad</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Certificado de seguridad SSL</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> 2 cuentas de correos</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Registro en los principales buscadores (Google, )</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Optimización SEO</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Integración con las redes sociales</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Mantenimiento mensual</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Soporte gratis</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+										<a href="#" class="button button-large button-rounded capitalize ls0" style="border-radius: 23px;">Contratar servicio</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6">
+
+								<div class="pricing-box best-price">
+									<div class="pricing-title">
+										<h3>Intermedio</h3>
+										<span>Más popular</span>
+									</div>
+									<div class="pricing-price">
+										<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>12</div>
+										<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>120</div>
+									</div>
+									<div class="pricing-features">
+										<ul style="padding-bottom: 40px !important; padding-top: 40px">
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Incluirá un total de 100 productos</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> 10 Secciones (Tienda, Carrito, Finalizar compra, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Blog (+ contenido enfocado al negocio)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sitio web adaptado a todos los dispositivos móviles</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Pagos seguros (Paypal, Tarjeta de crédito, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sistema automático de copias de seguridad</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Certificado de seguridad SSL</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Cuentas de correos ilimitadas</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Asesoramiento de marketing digital</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Registro en los principales buscadores (Google, )</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Optimización SEO</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Integración con las redes sociales</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Mantenimiento mensual</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Soporte gratis</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+                                        <a href="#" class="button button-large button-rounded capitalize ls0" style="border-radius: 23px;">Contratar servicio</a>
+{#										<div class="pts-switch-content-left"><a href="#" class="button button-large button-rounded capitalize ls0" style="border-radius: 23px;">Start Free Trial</a></div>#}
+{#										<div class="pts-switch-content-right"><a href="#" class="button button-large button-rounded capitalize ls0" style="border-radius: 23px;">Start Free Trial1</a></div>#}
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3">
+
+								<div class="pricing-box">
+									<div class="pricing-title">
+										<h3>Avanzado</h3>
+									</div>
+									<div class="pricing-price">
+										<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>19</div>
+										<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>190</div>
+									</div>
+									<div class="pricing-features">
+										<ul style="padding-bottom: 40px !important; padding-top: 40px">
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Productos ilimitados</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> 10 Secciones (Tienda, Carrito, Finalizar compra, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Blog (+ contenido enfocado al negocio)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sitio web adaptado a todos los dispositivos móviles</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Pagos seguros (Paypal, Tarjeta de crédito, etc.)</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Sistema automático de copias de seguridad</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Certificado de seguridad SSL</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Cuentas de correos ilimitadas</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Marketing digital avanzado</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Registro en los principales buscadores (Google, )</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Optimización SEO</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Integración con las redes sociales</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Mantenimiento mensual</li>
+                                            <li style="text-align: left; padding-left: 20px"><i class="icon-ok"></i> Soporte gratis</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+                                        <a href="#" class="button button-large button-rounded capitalize ls0" style="border-radius: 23px;">Contratar servicio</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+{% endblock %}
+
+{% block js %}
+
+    {{ block.super }}
+
+    <script>
+		jQuery(document).ready( function($){
+			function pricingSwitcher( elementCheck, elementParent, elementPricing ) {
+				elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+				elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+				if( elementCheck.filter(':checked').length > 0 ) {
+					elementParent.find('.pts-right').addClass('pts-switch-active');
+					elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+				} else {
+					elementParent.find('.pts-left').addClass('pts-switch-active');
+					elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+				}
+			}
+
+			$('.pts-switcher').each( function(){
+				var element = $(this),
+					elementCheck = element.find(':checkbox'),
+					elementParent = $(this).parents('.pricing-tenure-switcher'),
+					elementPricing = $( elementParent.attr('data-container') );
+
+				pricingSwitcher( elementCheck, elementParent, elementPricing );
+
+				elementCheck.on( 'change', function(){
+					pricingSwitcher( elementCheck, elementParent, elementPricing );
+				});
+			});
+		});
+	</script>
 
 {% endblock %}
