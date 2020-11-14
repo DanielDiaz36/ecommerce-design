@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
+from django.utils.text import slugify
 from django.views.generic import TemplateView
+
+from core.models import Design, DesignCategory
 
 
 class HomeView(TemplateView):
@@ -17,6 +20,11 @@ class DesignsView(TemplateView):
     def get_context_data(self, **kwargs):
         ctx = super(DesignsView, self).get_context_data(**kwargs)
         ctx['designs_active'] = True
+        ctx['designs'] = Design.objects.filter(is_active=True)
+        ctx['designs_category'] = DesignCategory.objects.filter(is_active=True)
+
+        # print(slugify("gafas de sol"))
+
         return ctx
 
 

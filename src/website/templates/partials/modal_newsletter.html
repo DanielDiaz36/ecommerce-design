@@ -1,0 +1,25 @@
+{% load static %}
+
+{#   <a href="#myModal1" data-lightbox="inline" class="button button-large button-rounded">Mostrar modal</a>#}
+
+<div class="modal-on-load" data-target="#myModal1" data-delay="1000"></div>
+
+<!-- Modal -->
+<div class="modal1 mfp-hide subscribe-widget" id="myModal1">
+    <div class="block dark divcenter" style="background: url({% static 'img/modal1.jpg' %}) no-repeat; background-size: cover; max-width: 700px;" data-height-xl="400">
+        <div style="padding: 50px;">
+            <div class="heading-block nobottomborder bottommargin-sm" style="max-width:600px;">
+                <h4>Suscríbete a nuestra newsletter</h4>
+                <p style="font-size: 109%; padding-top: 10px">¿Le gustaría recibir actualizaciones de nuevos diseños, además de estrategias para aumentar las ventas de su negocio?
+                    <em>¡Nosotros nunca enviaremos spam!</em>
+                </p>
+            </div>
+            <div class="widget-subscribe-form-result"></div>
+            <form class="widget-subscribe-form2" action="" method="post" style="max-width: 70%;">
+                <input type="email" id="widget-subscribe-form2-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Escriba su correo...">
+                <button class="button button-rounded button-border button-light noleftmargin" type="submit" style="margin-top:15px;">Subscribirme!</button>
+            </form>
+            <p class="nobottommargin"><small><em>*We hate Spam &amp; Junk Emails.</em></small></p>
+        </div>
+    </div>
+</div>
