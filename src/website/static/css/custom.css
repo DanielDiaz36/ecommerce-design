@@ -110,3 +110,31 @@
 .footer-contact span {
     color: rgba(255, 255, 255, 0.87) !important;
 }
+
+/* Diseños */
+#portfolio article {
+    padding: 15px 10px 15px 10px !important;
+}
+
+.button-select-design { background-color: #1ABC9C; }
+.button-3d.button-select-design:hover,
+.button-reveal.button-select-design:hover,
+.button-border.button-select-design:hover,
+.button-border.button-select-design.button-fill:before { background-color: #1ABC9C !important; }
+
+.button-border.button-select-design {
+	color: #1ABC9C;
+	border-color: #1ABC9C;
+}
+
+.portfolio-desc {
+    height: 100px;
+}
+
+
+/* Precios */
+.li-pricing {
+    text-align: left !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}

@@ -3,7 +3,7 @@
 <ul>
     <li {% if inicio_active == True %} class="current" {% endif %}><a href="{% url 'home' %}"><div>Inicio</div></a></li>
     <li {% if designs_active == True %} class="current" {% endif %}><a href="{% url 'designs' %}"><div>Diseños</div></a></li>
-    <li {% if services_active == True %} class="current" {% endif %}><a href="{% url 'services' %}"><div>Servicios</div></a></li>
+{#    <li {% if services_active == True %} class="current" {% endif %}><a href="{% url 'services' %}"><div>Servicios</div></a></li>#}
     <li {% if pricing_active == True %} class="current" {% endif %}><a href="{% url 'pricing' %}"><div>Precios</div></a></li>
     <li {% if blog_active == True %} class="current" {% endif %}><a href="{% url 'blog' %}"><div>Blog</div></a></li>
 {#    <li {% if podcast_active == True %} class="current" {% endif %}><a href="{% url 'podcast' %}"><div>Podcast</div></a></li>#}
