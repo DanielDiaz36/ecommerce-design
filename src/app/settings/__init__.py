@@ -15,6 +15,9 @@ except ImportError:
     pass
 
 
+print(ENVIRONMENT)
+
+
 if ENVIRONMENT == 'prod':
     try:
         # Import prod environment configurations.
