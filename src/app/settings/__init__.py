@@ -15,7 +15,7 @@ except ImportError:
     pass
 
 
-print(ENVIRONMENT)
+print(os.environ.get('SECRET_KEY'))
 
 
 if ENVIRONMENT == 'prod':
