@@ -6,7 +6,7 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # SECURITY WARNING: update this when you have the production host
 ALLOWED_HOSTS = ['testingmylandingpage.alwaysdata.net', 'www.testingmylandingpage.alwaysdata.net']
