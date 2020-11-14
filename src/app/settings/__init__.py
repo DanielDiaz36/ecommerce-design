@@ -14,6 +14,8 @@ try:
 except ImportError:
     pass
 
+print(f"\n\nENVIRNMOENTS: {os.environ}\n\n")
+
 
 print(f"ENV: {os.environ.get('ENV')}")
 print(f"SECRET_KEY: {os.environ.get('SECRET_KEY')}")
