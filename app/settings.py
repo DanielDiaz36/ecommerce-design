@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -68,12 +69,24 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql_psycopg2'),
+        'NAME': os.getenv('DB_NAME', 'dds7lms9oapo0p'),
+        'USER': os.getenv('DB_USER', 'aygqakerrdpqpq'),
+        'PASSWORD': os.getenv('DB_PASSWORD', '1dfc57ac852567d743bd1412b466466b7cc5ec8c84989a190b8eaf028d62efbd'),
+        'HOST': os.getenv('DB_HOST', 'ec2-23-23-128-222.compute-1.amazonaws.com'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
