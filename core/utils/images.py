@@ -2,6 +2,7 @@ from PIL import Image
 from io import BytesIO
 from django.core.files import File
 
+
 def compress_image(image):
     im = Image.open(image)
     # im = im.convert('RGB')

@@ -22,9 +22,6 @@ class DesignsView(TemplateView):
         ctx['designs_active'] = True
         ctx['designs'] = Design.objects.filter(is_active=True)
         ctx['designs_category'] = DesignCategory.objects.filter(is_active=True)
-
-        # print(slugify("gafas de sol"))
-
         return ctx
 
 

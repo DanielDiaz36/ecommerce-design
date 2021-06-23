@@ -141,6 +141,8 @@ STATICFILES_DIRS = (
 # Modelo User personalizado
 AUTH_USER_MODEL = "users.User"
 
+print(f"ENVIROMENT: {os.environ}")
+
 
 # if os.getcwd() == '/app':
 #     DEBUG = False
