@@ -10,7 +10,7 @@ class Command(BaseCommand):
         from django.conf import settings
         print('... ACTUALIZANDO BD ...')
         paths = [
-            os.path.join(settings.BASE_DIR, '../core', 'fixtures'),
+            os.path.join(settings.BASE_DIR, 'core', 'fixtures'),
         ]
         for path in paths:
             fixtures = sorted(os.listdir(path))
