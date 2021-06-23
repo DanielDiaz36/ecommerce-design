@@ -38,6 +38,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,3 +135,7 @@ STATICFILES_DIRS = (
 
 # Modelo User personalizado
 AUTH_USER_MODEL = "users.User"
+
+
+if os.getcwd() == '/app':
+    DEBUG = False
