@@ -129,5 +129,5 @@ STATICFILES_DIRS = (
 AUTH_USER_MODEL = "users.User"
 
 
-if os.getcwd() == '/app':
-    DEBUG = False
+# if os.getcwd() == '/app':
+#     DEBUG = False
