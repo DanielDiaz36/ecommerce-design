@@ -1,24 +1,17 @@
 # -*- coding: utf-8 -*-
 import os
-from dotenv import load_dotenv
-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Reading .env file
-load_dotenv(dotenv_path=str(os.path.join(str(BASE_DIR), '.env')))
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
-
-PRODUCTION = int(os.getenv('PRODUCTION'))
+SECRET_KEY = 'x&e=@be22im-$)*zrh)$n#=2y+ph+(f20+9x6evt^+xu-6@5*8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = not bool(PRODUCTION)
+DEBUG = True
 
 # SECURITY WARNING: update this when you have the production host
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'testing-landing-page.herokuapp.com']
 
 
 # Application definition
