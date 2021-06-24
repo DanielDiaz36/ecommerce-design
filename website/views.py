@@ -3,7 +3,7 @@ from django.utils.text import slugify
 from django.views.generic import TemplateView
 
 from core.models import Design, DesignCategory
-import os
+
 
 class HomeView(TemplateView):
     template_name = 'pages/home.html'
@@ -22,7 +22,6 @@ class DesignsView(TemplateView):
         ctx['designs_active'] = True
         ctx['designs'] = Design.objects.filter(is_active=True)
         ctx['designs_category'] = DesignCategory.objects.filter(is_active=True)
-        ctx['database_url'] = os.environ.get('DATABASE_URL', 'NOT FOUND VAR')
         return ctx
 
 
