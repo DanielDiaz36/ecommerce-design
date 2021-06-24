@@ -22,7 +22,7 @@ class DesignsView(TemplateView):
         ctx['designs_active'] = True
         ctx['designs'] = Design.objects.filter(is_active=True)
         ctx['designs_category'] = DesignCategory.objects.filter(is_active=True)
-        ctx['database_url'] = os.environ('DATABASE_URL', 'NOT FOUND VAR')
+        ctx['database_url'] = os.environ.get('DATABASE_URL', 'NOT FOUND VAR')
         return ctx
 
 
