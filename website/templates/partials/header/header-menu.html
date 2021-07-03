@@ -2,10 +2,10 @@
 
 <ul>
     <li {% if inicio_active == True %} class="current" {% endif %}><a href="{% url 'home' %}"><div>Inicio</div></a></li>
-    <li {% if designs_active == True %} class="current" {% endif %}><a href="{% url 'designs' %}"><div>Diseños</div></a></li>
+{#    <li {% if designs_active == True %} class="current" {% endif %}><a href="{% url 'designs' %}"><div>Diseños</div></a></li>#}
 {#    <li {% if services_active == True %} class="current" {% endif %}><a href="{% url 'services' %}"><div>Servicios</div></a></li>#}
-    <li {% if pricing_active == True %} class="current" {% endif %}><a href="{% url 'pricing' %}"><div>Precios</div></a></li>
-    <li {% if blog_active == True %} class="current" {% endif %}><a href="{% url 'blog' %}"><div>Blog</div></a></li>
+{#    <li {% if pricing_active == True %} class="current" {% endif %}><a href="{% url 'pricing' %}"><div>Precios</div></a></li>#}
+{#    <li {% if blog_active == True %} class="current" {% endif %}><a href="{% url 'blog' %}"><div>Blog</div></a></li>#}
 {#    <li {% if podcast_active == True %} class="current" {% endif %}><a href="{% url 'podcast' %}"><div>Podcast</div></a></li>#}
     <li id="li_siguenos"><a href="#"><div>Síguenos</div></a>
         <ul>
@@ -23,6 +23,7 @@
 {#            <li><a href="#"><div>Inglés</div></a>#}
 {#        </ul>#}
 {#    </li>#}
+    <li {% if portfolio_active == True %} class="current" {% endif %}><a href="{% url 'portfolio' %}"><div>Portfolio</div></a></li>
     <li {% if contact_active == True %} class="current" {% endif %}><a href="{% url 'contact' %}"><div>Contacto</div></a></li>
     <li {% if about_active == True %} class="current" {% endif %}><a href="{% url 'about' %}"><div>Sobre nosotros</div></a></li>
     <li id="li_login"><a href="#" class="button button-small"><i class="icon-line-unlock" style="padding-top: 3px"></i>Acceder</a></li>

@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 import os
+from app import config
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x&e=@be22im-$)*zrh)$n#=2y+ph+(f20+9x6evt^+xu-6@5*8'
+SECRET_KEY = config.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.DEBUG
 
 # SECURITY WARNING: update this when you have the production host
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'testing-landing-page.herokuapp.com']
+ALLOWED_HOSTS = config.ALLOWED_HOSTS
 
 
 # Application definition
@@ -69,23 +70,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-DATABASES = {
-    'default': {
-        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql_psycopg2'),
-        'NAME': os.getenv('DB_NAME', 'dds7lms9oapo0p'),
-        'USER': os.getenv('DB_USER', 'aygqakerrdpqpq'),
-        'PASSWORD': os.getenv('DB_PASSWORD', '1dfc57ac852567d743bd1412b466466b7cc5ec8c84989a190b8eaf028d62efbd'),
-        'HOST': os.getenv('DB_HOST', 'ec2-23-23-128-222.compute-1.amazonaws.com'),
-        'PORT': os.getenv('DB_PORT', '5432'),
-    }
-}
+DATABASES = config.DATABASES
 
 
 # Password validation
@@ -137,12 +122,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'website', 'static'),
 )
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Modelo User personalizado
 AUTH_USER_MODEL = "users.User"
-
-print(f"ENVIROMENT: {os.environ}")
-
 
 # if os.getcwd() == '/app':
 #     DEBUG = False

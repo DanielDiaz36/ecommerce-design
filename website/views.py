@@ -14,6 +14,15 @@ class HomeView(TemplateView):
         return ctx
 
 
+class PortfolioView(TemplateView):
+    template_name = 'pages/portfolio.html'
+
+    def get_context_data(self, **kwargs):
+        ctx = super(PortfolioView, self).get_context_data(**kwargs)
+        ctx['portfolio_active'] = True
+        return ctx
+
+
 class DesignsView(TemplateView):
     template_name = 'pages/designs.html'
 
